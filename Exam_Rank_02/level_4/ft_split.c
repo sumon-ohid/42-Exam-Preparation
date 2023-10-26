@@ -41,7 +41,7 @@ char    **ft_split(char *str)
     {
         if (str[i] != ' ' && str[i] != '\t' && str[i] != '\n')
         {
-            split[j] = (char *)malloc(sizeof(char) * ft_strlen(&str[i]) + 1);
+            split[j] = (char *)malloc(sizeof(char));
             k = 0;
             while (str[i] != '\0' && str[i] != ' ' && str[i] != '\t' && str[i] != '\n')
                 split[j][k++] = str[i++];
@@ -64,7 +64,7 @@ int main()
 
     if (split)
     {
-        while (split[i] != NULL)
+        while (split[i])
         {
             printf("%s\n", split[i]);
             i++;
