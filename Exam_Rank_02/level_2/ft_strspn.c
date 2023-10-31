@@ -21,12 +21,17 @@ size_t	ft_strspn(const char *s, const char *accept)
 
     res = 0;
     i = 0;
-    j = 0;
-    while (s[i] != '\0' && )
+    j = 0`;
+    while (s[i] != '\0' && *accept)
     {
-
+        if (s[i] == *accept)
+        {
+            accept++;
+            j++;
+        }
+        i++;
     }
-    return (0);
+    return (j);
 }
 
 int main()
