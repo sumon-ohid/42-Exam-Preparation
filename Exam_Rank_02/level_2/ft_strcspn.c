@@ -36,7 +36,7 @@ size_t	ft_strcspn(const char *s, const char *reject)
 int main()
 {
     const char *s1 = "Hello World";
-    const char *s2 = "W";
+    const char *s2 = "World";
     size_t i = ft_strcspn(s1, s2);
     size_t j = strcspn(s1, s2);
     printf("%zu\n", i);
