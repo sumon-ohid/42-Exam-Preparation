@@ -21,7 +21,7 @@ size_t	ft_strspn(const char *s, const char *accept)
 
     res = 0;
     i = 0;
-    j = 0`;
+    j = 0;
     while (s[i] != '\0' && *accept)
     {
         if (s[i] == *accept)
@@ -37,7 +37,7 @@ size_t	ft_strspn(const char *s, const char *accept)
 int main()
 {
     char *s1 = "HelloWorld";
-    char *s2 = "HeW";
+    char *s2 = "Hello";
     int i = strspn(s1, s2);
     printf("%d\n", i);
     i = ft_strspn(s1, s2);
