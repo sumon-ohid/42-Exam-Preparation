@@ -13,53 +13,52 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int     counter(int nbr)
+int counter(int n)
 {
     int i = 0;
-    if (nbr <= 0)
+    if (n <= 0)
         i++;
-    while (nbr)
+    while (n)
     {
-        nbr = nbr / 10;
+        n = n / 10;
         i++;
     }
-    printf("%d\n", i);
     return (i);
 }
 
-char    *ft_itoa(int nbr)
+char *ft_itoa(int num)
 {
+    int len = counter(num);
     char *str;
-    int len = counter(nbr);
 
     str = (char *)malloc(sizeof(char) * len + 1);
     if (!str)
         return (NULL);
     str[len] = '\0';
     len--;
-    if(nbr == -2147483648)
-		return("-2147483648\0");
-    if (nbr == 0)
+    if (num == -2147483647)
+        return ("-2147483647\0");
+    if (num < 0)
+    {
+        str[0] = '-';
+        num = -num;
+    }
+    if (num == 0)
     {
         str[0] = '0';
         return (str);
     }
-    if (nbr < 0)
+    while (num)
     {
-        str[0] = '-';
-        nbr = -nbr;
-    }
-    while (nbr)
-    {
-        str[len--] = nbr % 10 + '0';
-        nbr = nbr / 10;
+        str[len--] = num % 10 + '0';
+        num = num / 10;
     }
     return (str);
 }
 
 int main(void)
 {
-    int     a = -54542;
+    int     a = -45652;
     char    *b = ft_itoa(a);
     printf("%s\n", b);
     return (0);
