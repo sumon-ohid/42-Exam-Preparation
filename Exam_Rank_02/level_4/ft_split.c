@@ -29,31 +29,30 @@ int ft_strlen(char *str)
 
 char    **ft_split(char *str)
 {
-    int i;
-    int j;
-    int k;
-    char **split; // **split = split[][]
+    int i = 0;
+    int j = 0;
+    int k = 0;
+    char **temp;
+    int len = ft_strlen(str);
 
-    i = 0;
-    j = 0;
-    split = (char **)malloc(sizeof(char *) * ft_strlen(str));
-    while (str[i] != '\0')
+    temp = (char **)malloc(sizeof(char *) * len);
+    if (!temp)
+        return (NULL);
+    while(str[i] != '\0')
     {
         if (str[i] != ' ' && str[i] != '\t' && str[i] != '\n')
         {
-            split[j] = (char *)malloc(sizeof(char));
+            temp[j] = (char *)malloc(sizeof(char));
             k = 0;
-            while (str[i] != '\0' && str[i] != ' ' && str[i] != '\t' && str[i] != '\n')
-                split[j][k++] = str[i++];
-            split[j][k] = '\0';
+            while (str[i] != ' ' && str[i] != '\t' && str[i] != '\n' && str[i] != '\0')
+                temp[j][k++] = str[i++];
+            temp[j][k] = '\0';
             j++;
         }
         else
             i++;
     }
-    //split[j] = NULL;
-    free(split[j]);
-    return (split);
+    return (temp);
 }
 
 int main()
