@@ -31,10 +31,10 @@ void	inter(char *s1, char *s2)
 	}
 }
 
-int	main(int ac, char **av)
-{
-	if (ac == 3)
-		inter(av[1], av[2]);
-	write(1, "\n", 1);
-	return (0);
-}
+// int	main(int ac, char **av)
+// {
+// 	if (ac == 3)
+// 		inter(av[1], av[2]);
+// 	write(1, "\n", 1);
+// 	return (0);
+// }
