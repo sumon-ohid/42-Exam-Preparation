@@ -1,4 +1,4 @@
-# alpha_mirror Assignment
+# Assignment - alpha_mirror
 
 ## Description
 
