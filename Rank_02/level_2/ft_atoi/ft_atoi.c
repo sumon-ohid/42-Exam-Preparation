@@ -25,10 +25,10 @@ int ft_atoi(const char *str)
     return (res * sign);
 }
 
-int main (void)
-{
-    const char *str = "    ---+++2147483648";
-    int res = ft_atoi(str);
-    printf("%d\n", res);
-    return (0);
-}
+// int main (void)
+// {
+//     const char *str = "    ---+++2147483648";
+//     int res = ft_atoi(str);
+//     printf("%d\n", res);
+//     return (0);
+// }
