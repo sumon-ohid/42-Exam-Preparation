@@ -24,7 +24,7 @@ This repository is a community effort to assist students in their exam preparati
 
 ## Support and Feedback
 
-If you have questions, encounter issues, or want to provide feedback, please feel free to [open an issue](https://github.com/sumon-ohid/42-Exam_Preparation/issues).
+If you have questions, encounter issues, or want to provide feedback, please feel free to [open an issue](https://github.com/sumon-ohid/42-Exam-Preparation/issues).
 
 ## Happy Coding!
 
