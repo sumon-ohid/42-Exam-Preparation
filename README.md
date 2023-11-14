@@ -4,7 +4,7 @@ Welcome to the 42 Exam Preparations Repository! 🚀
 
 ## Introduction
 
-This repository is dedicated to providing exam preparations for 42 students. Whether you are gearing up for exam rank 02 - 06 or any other related exams, you'll find valuable resources here.
+This repository is dedicated to providing exam preparations for 42 students. Whether you are gearing up for exam rank 02 any other related exams, you'll find valuable resources here.
 
 ## Content
 
