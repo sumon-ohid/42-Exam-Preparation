@@ -1,4 +1,4 @@
-# 42 Vienna Exam Rank 2 Repository
+# 42 Exam Rank 2
 
 Welcome to the 42 Exam Rank 2 repository! This repository contains exercises from levels 1 to 4 to help you prepare for the 42 exam and improve your coding skills.
 
