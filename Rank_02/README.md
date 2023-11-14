@@ -17,5 +17,5 @@ Feel free to explore the exercises at your own pace. Each level is organized in 
 ## NOTE
 This is created for 42 students to help them prepare for the Exam_rank_02. All the subjects are collected from GitHub. There is no guarantee that the real exam will have the same questions. DON'T PANIC, HAPPY CODING.
 
-## Contact
-If you have any questions, suggestions, or concerns, feel free to reach out to [SUMON](https://sumon.carrd.co/).
+## Feedback & Support
+If you have questions, encounter issues, or want to provide feedback, please feel free to [open an issue](https://github.com/sumon-ohid/42-Exam-Preparation/issues).
