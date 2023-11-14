@@ -14,7 +14,7 @@ This repository is a collection of exercises designed to assist you in preparing
 ## Usage
 Feel free to explore the exercises at your own pace. Each level is organized in a separate directory with detailed instructions provided in each exercise's README file. You can use these exercises to practice, improve, and gain confidence in your programming skills.
 
-##NOTE
+## NOTE
 This is created for 42 students to help them prepare for the Exam_rank_02. All the subjects are collected from GitHub. There is no guarantee that the real exam will have the same questions. DON'T PANIC, HAPPY CODING.
 
 ## Contact
