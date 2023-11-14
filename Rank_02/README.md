@@ -2,14 +2,6 @@
 
 Welcome to the 42 Vienna Exam Rank 2 repository! This repository contains exercises from levels 1 to 4 to help you prepare for the 42 exam and improve your coding skills.
 
-## Table of Contents
-- [Description](#description)
-- [Levels](#levels)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
 ## Description
 This repository is a collection of exercises designed to assist you in preparing for the 42 exam, specifically for rank 2. The exercises are categorized into different levels, ranging from level 1 to level 4, providing a progressive learning path.
 
@@ -25,8 +17,8 @@ Feel free to explore the exercises at your own pace. Each level is organized in 
 ## Contributing
 If you would like to contribute additional exercises, improvements, or corrections, please follow the guidelines outlined in the CONTRIBUTING.md file.
 
-## License
-This repository is licensed under the [MIT License](LICENSE). Feel free to use the code for personal or educational purposes.
+##NOTE
+This is created for 42 students to help them prepare for the Exam_rank_02. All the subjects are collected from GitHub. There is no guarantee that the real exam will have the same questions. DON'T PANIC, HAPPY CODING.
 
 ## Contact
 If you have any questions, suggestions, or concerns, feel free to reach out to [SUMON](https://sumon.carrd.co/).
