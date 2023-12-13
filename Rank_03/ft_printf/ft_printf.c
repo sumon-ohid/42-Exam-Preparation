@@ -6,7 +6,7 @@
 /*   By: msumon <msumon@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 14:29:57 by msumon            #+#    #+#             */
-/*   Updated: 2023/12/13 17:57:07 by msumon           ###   ########.fr       */
+/*   Updated: 2023/12/13 19:46:46 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,17 @@ void ft_print_digit(int num, int base, int *len)
     
     if (num < 0)
     {
-        num = num * (-1);
-        write (1, "-", 1);
-        len++;
+        if (num == -2147483648)
+        {
+            write(1, "-2147483648", 11);
+            *len = 11;
+        }
+        else
+        {
+            num = num * (-1);
+            write (1, "-", 1);
+            len++;
+        }
     }
     if (num >= base)
         ft_print_digit(num / base, base, len);
@@ -54,6 +62,8 @@ int ft_printf(const char *format, ... )
     len = 0;
     i = 0;
     va_start(ap, format);
+    if (!format)
+        return (-1);
     while (format[i])
     {
         if (format[i] == '%')
@@ -67,24 +77,22 @@ int ft_printf(const char *format, ... )
                 ft_print_digit(va_arg(ap, int), 16, &len);
             i++;
         }
-        write(1, &format[i], 1);
+        else
+        {
+            write(1, &format[i], 1);
+            i++;
+        }
         len++;
-        i++;
     }
     va_end(ap);
     return (len);
 }
 
 int main(void)
-{
-    char *str = "hello";
-    int n = 100;
-    
-    int re = ft_printf("%s\n", str);
-    ft_printf("%d\n", re);
-    re = ft_printf("Number is %d\n", n);
-    ft_printf("%d\n", re);
-    re = ft_printf("Number is %x\n", n);
-    ft_printf("%d\n", re);
+{    
+    ft_printf("%s\n", "toto");
+    ft_printf("Magic %s is %d", "number", 42);
+    ft_printf("\n");
+    ft_printf("Hexadecimal for %d is %x\n", 42, 42);
     return (0);
 }
