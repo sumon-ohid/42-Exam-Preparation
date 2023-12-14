@@ -6,7 +6,7 @@
 /*   By: msumon <msumon@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 14:29:57 by msumon            #+#    #+#             */
-/*   Updated: 2023/12/13 19:46:46 by msumon           ###   ########.fr       */
+/*   Updated: 2023/12/14 17:41:27 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,20 +37,22 @@ void ft_print_digit(int num, int base, int *len)
         if (num == -2147483648)
         {
             write(1, "-2147483648", 11);
-            *len = 11;
+            *len += 11; 
+            return;
         }
         else
         {
             num = num * (-1);
             write (1, "-", 1);
-            len++;
+            *len += 1;
         }
     }
     if (num >= base)
         ft_print_digit(num / base, base, len);
     write(1, &hex[num % base], 1);
-    len = len + 1;
+    *len += 1;
 }
+
 
 int ft_printf(const char *format, ... )
 {
@@ -93,6 +95,6 @@ int main(void)
     ft_printf("%s\n", "toto");
     ft_printf("Magic %s is %d", "number", 42);
     ft_printf("\n");
-    ft_printf("Hexadecimal for %d is %x\n", 42, 42);
+    ft_printf("Hexadecimal for %d is %x\n", 89777, 42);
     return (0);
 }
