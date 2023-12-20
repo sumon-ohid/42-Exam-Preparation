@@ -3,17 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msumon <msumon@student.42vienna.com>       +#+  +:+       +#+        */
+/*   By: sumon <sumon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 17:57:24 by sumon             #+#    #+#             */
-/*   Updated: 2023/12/14 19:51:21 by msumon           ###   ########.fr       */
+/*   Updated: 2023/12/20 23:38:36 by sumon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdlib.h>
 
-#define BUFFER_SIZE 12
+#ifndef BUFFER_SIZE
+#define BUFFER_SIZE 10
+#endif
 
 size_t	ft_strlen_gnl(char *s)
 {
