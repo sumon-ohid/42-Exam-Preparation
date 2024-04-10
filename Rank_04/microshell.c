@@ -62,12 +62,7 @@ int main(int argc, char **argv, char **envp)
     int i = 0;
     int status = 0;
 
-    if (argc < 2)
-    {
-        error("error: invalid number of arguments\n");
-        return (1);
-    }
-    else
+    if (argc > 2)
     {
         while (argv[i] && argv[++i])
         {
