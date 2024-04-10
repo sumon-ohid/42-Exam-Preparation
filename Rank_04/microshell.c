@@ -62,7 +62,7 @@ int main(int argc, char **argv, char **envp)
     int i = 0;
     int status = 0;
 
-    if (argc > 2)
+    if (argc > 1)
     {
         while (argv[i] && argv[++i])
         {
